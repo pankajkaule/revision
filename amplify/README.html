@@ -1,0 +1,556 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\panka\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.6\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <div style="color:green;font-size:14px;text-transform: Capitalize;">Qua. what is Amplify? ?</div>
+<div style="color:white;font-size:12px;text-transform: Capitalize;">Ans. =&gt; The open-source Amplify provides the following products to build fullstack iOS, Android, Flutter, Web, and React Native apps:
+<ol>
+<li>Amplify CLI - Configure all the services needed to power your backend through a simple command line interface.</li>
+<li>Amplify Libraries - Use case-centric client libraries to integrate your app code with a backend using declarative interfaces.</li>
+<li>Amplify UI Components - UI libraries for React, React Native, Angular, Vue and Flutter.\</li>
+</ol>
+<p>The Amplify Hosting is an AWS service that provides a git-based workflow for continuous deployment &amp; hosting of fullstack web apps. Cloud resources created by the Amplify CLI are also visible in the Amplify Console. .</p></div><p></p>
+<div style="color:green;font-size:14px;text-transform: Capitalize;">Qua. How to Install and configure the Amplify CLI ?</div>
+<div style="color:white;font-size:12px;text-transform: Capitalize;">Ans. =&gt; 
+<p><a href="https://youtu.be/fWbM5DLh25U">video link</a></p>
+<p>steps</p>
+<ol>
+<li>npm install -g @aws-amplify/cli</li>
+</ol>
+<p>Now it&apos;s time to setup the Amplify CLI. Configure Amplify by running the following command:</p>
+<ol start="2">
+<li>amplify configure</li>
+</ol>
+<p>Once you&apos;re signed in, Amplify CLI will ask you to create an IAM user.</p>
+<p>Specify the AWS Region<br>
+? region:  <your preferred region><br>
+Specify the username of the new IAM user:<br>
+? user name:  <user name for amplify iam user><br>
+Complete the user creation using the AWS console: <url></url></user></your></p>
+<p>Follow the <url> and create a user with AdministratorAccess-Amplify to your account to provision AWS resources for you like AppSync, Cognito etc.</url></p>
+<img src="./assets/user-creation.gif">
+<p>Amplify CLI will then ask you to copy and paste the accessKeyId and the secretAccessKey from your newly created IAM user to connect with Amplify CLI.</p>
+<p>Enter the access key of the newly created user:<br>
+? accessKeyId:  <accesskeyid><br>
+? secretAccessKey:  <accesskey><br>
+This would update/create the AWS Profile in your local machine<br>
+? Profile Name: default<br>
+Successfully set up the new user.</accesskey></accesskeyid></p>
+<p>In the next section, you&apos;ll set up the app and initialize Amplify.</p>
+<ol start="3">
+<li>Create a new React App</li>
+</ol>
+<p>To get started, first create a new React app, and then install and use the Amplify CLI to start adding backend capabilities to your app.</p>
+<p>From your projects directory, run the following commands:</p>
+<pre data-role="codeBlock" data-info="cli" class="language-cli"><code>npx create-react-app react-amplified
+cd react-amplified
+
+</code></pre><p>This creates a new React app in a directory called react-amplified and then switches into the new directory.</p>
+<p>From the react-amplified directory, run the app by using the following command:</p>
+<pre data-role="codeBlock" data-info="console" class="language-console"><code>npm start
+</code></pre><ol start="4">
+<li>Initialize a new backend</li>
+</ol>
+<p>With the app running, it&apos;s time to set up Amplify and create the backend services to support the app.</p>
+<p>Open a new terminal. From the react-amplified directory, run:</p>
+<pre data-role="codeBlock" data-info="console" class="language-console"><code>amplify init
+</code></pre><p>When you initialize Amplify you&apos;ll be prompted for some information about the app, with the option to accept recommended values:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python">? Enter a name <span class="token keyword keyword-for">for</span> the project reactamplified
+The following configuration will be applied<span class="token punctuation">:</span>
+
+?Project information
+<span class="token operator">|</span> Name<span class="token punctuation">:</span>  reactamplified
+<span class="token operator">|</span> Environment<span class="token punctuation">:</span> dev
+<span class="token operator">|</span> Default editor<span class="token punctuation">:</span> Visual Studio Code
+<span class="token operator">|</span> App <span class="token builtin">type</span><span class="token punctuation">:</span> javascript
+<span class="token operator">|</span> Javascript framework<span class="token punctuation">:</span> react
+<span class="token operator">|</span> Source Directory Path<span class="token punctuation">:</span> src
+<span class="token operator">|</span> Distribution Directory Path<span class="token punctuation">:</span> build
+<span class="token operator">|</span> Build Command<span class="token punctuation">:</span> npm run<span class="token operator">-</span>script build
+<span class="token operator">|</span> Start Command<span class="token punctuation">:</span> npm run<span class="token operator">-</span>script start
+? Initialize the project <span class="token keyword keyword-with">with</span> the above configuration? Yes
+Using default provider  awscloudformation
+? Select the authentication method you want to use<span class="token punctuation">:</span> AWS profile
+
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+? Please choose the profile you want to use default
+</pre><p>When you initialize a new Amplify project, a few things happen:</p>
+<ol>
+<li>It creates a top level directory called amplify that stores your backend definition. During the tutorial you&apos;ll add capabilities such as a GraphQL API and authentication. As you add features, the amplify folder will grow with infrastructure-as-code templates that define your backend stack.</li>
+<li>Infrastructure-as-code is a best practice way to create a replicable backend stack.<br>
+It creates a file called aws-exports.js in the src directory that holds all the configuration for the services you create with Amplify. This is how the Amplify client is able to get the necessary information about your backend services.</li>
+<li>It modifies the .gitignore file, adding some generated files to the ignore list</li>
+<li>A cloud project is created for you in the AWS Amplify Console that can be accessed by running amplify console. The Console provides a list of backend environments, deep links to provisioned resources per Amplify category, status of recent deployments, and instructions on how to promote, clone, pull, and delete backend resources</li>
+</ol>
+<p>Install Amplify Libraries<br>
+The aws-amplify package is the main library for working with Amplify Libraries in your projects:</p>
+<pre data-role="codeBlock" data-info="console" class="language-console"><code>npm install aws-amplify
+</code></pre><ol start="5">
+<li>Set up frontend</li>
+</ol>
+<p>Next, configure Amplify so it can interact with backend services.</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword module keyword-import">import</span> <span class="token imports"><span class="token punctuation">{</span> <span class="token maybe-class-name">Amplify</span> <span class="token punctuation">}</span></span> <span class="token keyword module keyword-from">from</span> <span class="token string">&apos;aws-amplify&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword module keyword-import">import</span> <span class="token imports">awsExports</span> <span class="token keyword module keyword-from">from</span> <span class="token string">&apos;./aws-exports&apos;</span><span class="token punctuation">;</span>
+<span class="token maybe-class-name">Amplify</span><span class="token punctuation">.</span><span class="token method function property-access">configure</span><span class="token punctuation">(</span>awsExports<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+</pre><p>And that&apos;s all it takes to configure Amplify. As you add or remove categories and make updates to your backend configuration using the Amplify CLI, the configuration in aws-exports.js will update automatically.</p>
+<p>Now that your React app is set up and Amplify is initialized, you can add an API in the next step.</p>
+<ol start="6">
+<li>Connect API and database to the app</li>
+</ol>
+<p>Now that you&#x2019;ve created and configured a React app and initialized a new Amplify project, you can add a feature. The first feature you will add is an API.</p>
+<p>The Amplify CLI supports creating and interacting with two types of API categories: REST and GraphQL.</p>
+<p>The API you will be creating in this step is a GraphQL API using AWS AppSync (a managed GraphQL service) and the database will be Amazon DynamoDB (a NoSQL database).</p>
+<p>Create a GraphQL API and database</p>
+<pre data-role="codeBlock" data-info="console" class="language-console"><code>amplify add api
+</code></pre><p>Accept the default values which are highlighted below:</p>
+<p>? Select from one of the below mentioned services: GraphQL<br>
+? Here is the GraphQL API that we will create. Select a setting to edit or continue Continue<br>
+? Choose a schema template: Single object with fields (e.g., &#x201C;Todo&#x201D; with ID, name, description).<br>
+The CLI should open this GraphQL schema in your text editor.</p>
+<pre data-role="codeBlock" data-info="javasc" class="language-javasc"><code>type Todo @model {
+  id: ID!
+  name: String!
+  description: String
+}
+</code></pre><p>The schema generated is for a Todo app. You&apos;ll notice a directive on the Todo type of @model. This directive is part of the GraphQL transform library of Amplify.</p>
+<p>The GraphQL Transform Library provides custom directives you can use in your schema that allow you to do things like define data models, set up authentication and authorization rules, configure serverless functions as resolvers, and more.</p>
+<p>A type decorated with the @model directive will scaffold out the database table for the type (Todo table), the schema for CRUD (create, read, update, delete) and list operations, and the GraphQL resolvers needed to make everything work together.</p>
+<p>From the command line, press enter to accept the schema and continue to the next steps.</p>
+<p>Deploying the API<br>
+To deploy this backend, run the push command:</p>
+<pre data-role="codeBlock" data-info="json" class="language-json">amplify push
+</pre><p>? Are you sure you want to continue? Y</p>
+<h1>You will be walked through the following questions for GraphQL code generation</h1>
+<p>? Do you want to generate code for your newly created GraphQL API? Y<br>
+? Choose the code generation language target: javascript<br>
+? Enter the file name pattern of graphql queries, mutations and subscriptions: src/graphql/**/*.js<br>
+? Do you want to generate/update all possible GraphQL operations - queries, mutations and subscriptions? Y<br>
+? Enter maximum statement depth [increase from default if your schema is deeply nested]: 2</p>
+<p>? Are you sure you want to continue? Yes</p>
+<p>...</p>
+<p>? Do you want to generate code for your newly created GraphQL API Yes<br>
+? Choose the code generation language target javascript<br>
+? Enter the file name pattern of graphql queries, mutations and subscriptions src/graphql/**/*.js<br>
+? Do you want to generate/update all possible GraphQL operations - queries, mutations and subscriptions Yes<br>
+? Enter maximum statement depth [increase from default if your schema is deeply nested] 2</p>
+<p>Now the API is live and you can start interacting with it!</p>
+<p>The API you have deployed is for a Todo app, including operations for creating, reading, updating, deleting, and listing todos.</p>
+<p>Next, run the following command to check Amplify&apos;s status:</p>
+<pre data-role="codeBlock" data-info="console" class="language-console"><code>amplify status
+</code></pre><p>This will give us the current status of the Amplify project, including the current environment, any categories that have been created, and what state those categories are in. It should look similar to this:</p>
+<p>Current Environment: dev</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Resource name</th>
+<th>Operation</th>
+<th>Provider plugin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Api</td>
+<td>myapi</td>
+<td>No Change</td>
+<td>awscloudformation</td>
+</tr>
+</tbody>
+</table>
+<p>To view the GraphQL API in the AppSync console at any time, run the following command:</p>
+<p>Try running a couple of mutations locally and then querying for the todos:</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript">mutation createTodo <span class="token punctuation">{</span>
+  <span class="token function">createTodo</span><span class="token punctuation">(</span>input<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;Build an API&quot;</span>
+    description<span class="token operator">:</span> <span class="token string">&quot;Build a serverless API with Amplify and GraphQL&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    id
+    name
+    description
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+query listTodos <span class="token punctuation">{</span>
+  listTodos <span class="token punctuation">{</span>
+    items <span class="token punctuation">{</span>
+      id
+      description
+      name
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h2>Connect frontend to API</h2>
+<p>In this section you will create a way to list and create todos from the React application. To do this, you will create a form with a button to create todos as well as a way to fetch and render the list of todos.</p>
+<pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-import">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> useEffect<span class="token punctuation">,</span> useState <span class="token punctuation">}</span> <span class="token keyword keyword-from">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-import">import</span> <span class="token punctuation">{</span> Amplify<span class="token punctuation">,</span> API<span class="token punctuation">,</span> graphqlOperation <span class="token punctuation">}</span> <span class="token keyword keyword-from">from</span> <span class="token string">&apos;aws-amplify&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-import">import</span> <span class="token punctuation">{</span> createTodo <span class="token punctuation">}</span> <span class="token keyword keyword-from">from</span> <span class="token string">&apos;./graphql/mutations&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-import">import</span> <span class="token punctuation">{</span> listTodos <span class="token punctuation">}</span> <span class="token keyword keyword-from">from</span> <span class="token string">&apos;./graphql/queries&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-import">import</span> awsExports <span class="token keyword keyword-from">from</span> <span class="token string">&quot;./aws-exports&quot;</span><span class="token punctuation">;</span>
+Amplify<span class="token punctuation">.</span>configure<span class="token punctuation">(</span>awsExports<span class="token punctuation">)</span><span class="token punctuation">;</span>
+const initialState <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span> description<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span> <span class="token punctuation">}</span>
+
+const App <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  const <span class="token punctuation">[</span>formState<span class="token punctuation">,</span> setFormState<span class="token punctuation">]</span> <span class="token operator">=</span> useState<span class="token punctuation">(</span>initialState<span class="token punctuation">)</span>
+  const <span class="token punctuation">[</span>todos<span class="token punctuation">,</span> setTodos<span class="token punctuation">]</span> <span class="token operator">=</span> useState<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+  useEffect<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    fetchTodos<span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+  function setInput<span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    setFormState<span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>formState<span class="token punctuation">,</span> <span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">:</span> value <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-async">async</span> function fetchTodos<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-try">try</span> <span class="token punctuation">{</span>
+      const todoData <span class="token operator">=</span> <span class="token keyword keyword-await">await</span> API<span class="token punctuation">.</span>graphql<span class="token punctuation">(</span>graphqlOperation<span class="token punctuation">(</span>listTodos<span class="token punctuation">)</span><span class="token punctuation">)</span>
+      const todos <span class="token operator">=</span> todoData<span class="token punctuation">.</span>data<span class="token punctuation">.</span>listTodos<span class="token punctuation">.</span>items
+      setTodos<span class="token punctuation">(</span>todos<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> catch <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span>log<span class="token punctuation">(</span><span class="token string">&apos;error fetching todos&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-async">async</span> function addTodo<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-try">try</span> <span class="token punctuation">{</span>
+      <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>!formState<span class="token punctuation">.</span>name <span class="token operator">|</span><span class="token operator">|</span> !formState<span class="token punctuation">.</span>description<span class="token punctuation">)</span> <span class="token keyword keyword-return">return</span>
+      const todo <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>formState <span class="token punctuation">}</span>
+      setTodos<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>todos<span class="token punctuation">,</span> todo<span class="token punctuation">]</span><span class="token punctuation">)</span>
+      setFormState<span class="token punctuation">(</span>initialState<span class="token punctuation">)</span>
+      <span class="token keyword keyword-await">await</span> API<span class="token punctuation">.</span>graphql<span class="token punctuation">(</span>graphqlOperation<span class="token punctuation">(</span>createTodo<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token builtin">input</span><span class="token punctuation">:</span> todo<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> catch <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span>log<span class="token punctuation">(</span><span class="token string">&apos;error creating todo:&apos;</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword keyword-return">return</span> <span class="token punctuation">(</span>
+<span class="token comment"># html code is below</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+const styles <span class="token operator">=</span> <span class="token punctuation">{</span>
+  container<span class="token punctuation">:</span> <span class="token punctuation">{</span> width<span class="token punctuation">:</span> <span class="token number">400</span><span class="token punctuation">,</span> margin<span class="token punctuation">:</span> <span class="token string">&apos;0 auto&apos;</span><span class="token punctuation">,</span> display<span class="token punctuation">:</span> <span class="token string">&apos;flex&apos;</span><span class="token punctuation">,</span> flexDirection<span class="token punctuation">:</span> <span class="token string">&apos;column&apos;</span><span class="token punctuation">,</span> justifyContent<span class="token punctuation">:</span> <span class="token string">&apos;center&apos;</span><span class="token punctuation">,</span> padding<span class="token punctuation">:</span> <span class="token number">20</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  todo<span class="token punctuation">:</span> <span class="token punctuation">{</span>  marginBottom<span class="token punctuation">:</span> <span class="token number">15</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token builtin">input</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> border<span class="token punctuation">:</span> <span class="token string">&apos;none&apos;</span><span class="token punctuation">,</span> backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;#ddd&apos;</span><span class="token punctuation">,</span> marginBottom<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> padding<span class="token punctuation">:</span> <span class="token number">8</span><span class="token punctuation">,</span> fontSize<span class="token punctuation">:</span> <span class="token number">18</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  todoName<span class="token punctuation">:</span> <span class="token punctuation">{</span> fontSize<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span> fontWeight<span class="token punctuation">:</span> <span class="token string">&apos;bold&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  todoDescription<span class="token punctuation">:</span> <span class="token punctuation">{</span> marginBottom<span class="token punctuation">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  button<span class="token punctuation">:</span> <span class="token punctuation">{</span> backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;black&apos;</span><span class="token punctuation">,</span> color<span class="token punctuation">:</span> <span class="token string">&apos;white&apos;</span><span class="token punctuation">,</span> outline<span class="token punctuation">:</span> <span class="token string">&apos;none&apos;</span><span class="token punctuation">,</span> fontSize<span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span> padding<span class="token punctuation">:</span> <span class="token string">&apos;12px 0px&apos;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+export default App
+
+
+</pre><p>`</p>
+<pre class="language-text">&lt;div style={styles.container}&gt;
+  &lt;h2&gt;Amplify Todos&lt;/h2&gt;
+  &lt;input
+    onChange={event =&gt; setInput(&apos;name&apos;, event.target.value)}
+    style={styles.input}
+    value={formState.name}
+    placeholder=&quot;Name&quot;
+  /&gt;
+  &lt;input
+    onChange={event =&gt; setInput(&apos;description&apos;, event.target.value)}
+    style={styles.input}
+    value={formState.description}
+    placeholder=&quot;Description&quot;
+  /&gt;
+  &lt;button style={styles.button} onClick={addTodo}&gt;Create Todo&lt;/button&gt;
+  {
+    todos.map((todo, index) =&gt; (
+      &lt;div key={todo.id ? todo.id : index} style={styles.todo}&gt;
+        &lt;p style={styles.todoName}&gt;{todo.name}&lt;/p&gt;
+        &lt;p style={styles.todoDescription}&gt;{todo.description}&lt;/p&gt;
+      &lt;/div&gt;
+    ))
+  }
+&lt;/div&gt;
+
+
+`
+</pre>
+<h2 class="mume-header" id="add-authentication">Add authentication</h2>
+
+<p>Authentication with Amplify</p>
+<p>Amplify uses Amazon Cognito as the main authentication provider. Amazon Cognito is a robust user directory service that handles user registration, authentication, account recovery &amp; other operations. In this tutorial, you&apos;ll learn how to add authentication to your application using Amazon Cognito and username/password login.</p>
+<p>Create authentication service<br>
+To add authentication to your app, run this command:</p>
+<pre data-role="codeBlock" data-info="console" class="language-console"><code>amplify add auth
+</code></pre><p>To deploy the service, run the push command:</p>
+<pre data-role="codeBlock" data-info="console" class="language-console"><code>amplify push
+</code></pre><p>Now, the authentication service has been deployed and you can start using it. To view the deployed services in your project at any time, go to Amplify Console by running the following command:</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript">amplify console
+</pre></div>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
